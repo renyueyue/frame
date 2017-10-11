@@ -1,0 +1,55 @@
+@import "bootstrap.less";
+
+body{
+  margin-top: @navbar-height;/*50px导航条多高就往下搓出多少*/
+}
+@media screen and (max-width: @screen-xs-max){ //768
+  .navbar .navbar-form,
+  .navbar span.navbar-text {
+    display: none;
+  }
+  .navbar .navbar-text{
+    display: block;
+  }
+}
+.main{
+  background: @blue-dark;
+  color: #fff;
+  a{
+    color: #fff;
+    &:hover {
+      color: @blue-lighter;
+    }
+  }
+}
+@media screen and (min-width: @screen-md-min){ //992
+  .main .small .media{
+    padding: 1.8em;
+  }
+  .main .small .media li{
+    line-height: 2.6em;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px){
+  .main .small .media{
+    padding: 1.8em;
+  }
+  .main .small .media li{
+    line-height: 2.6em;
+  }
+}
+@media screen and (max-width: 767px){
+  .main .small .media li{
+    line-height: 1.6em;
+  }
+}
+.logo{
+  width: 63px;
+  height: 42px;
+  display: inline-block;/*有宽有高*/
+  background:url("../img/hdr-spr.png") 0 -512px;
+  margin-top: -10px;
+}
+.footer{
+
+}
